@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <script>
+      const person = {
+          firstName: "John",
+          lastName: "Doe",
+          age: 30,
+          // Method
+          fullName: function() {
+              return this.firstName + " " + this.lastName;
+          }
+      };
+
+      console.log(typeof person);
+      console.log(person);
+
+      console.log(person.fullName());  // Output: "John Doe"
+      person.age = 31;  // Dot notation
+      person["firstName"] = "Jane";  // Bracket notation
+      console.log(person.fullName());
+
+      console.log(person);
+      person.eyeColor = "blue";  // Adds a new property
+      console.log(person);
+      delete person.age;  // Removes the 'age' property
+      console.log(person);
+
+
+      const student = {
+          name: "Alice",
+          grades: {
+              math: 90,
+              science: 85
+          },
+          displayGrades: function() {
+              return "Math: " + this.grades.math + ", Science: " + this.grades.science;
+          }
+      };
+
+      console.log(student.grades.math);  // Output: 90
+      console.log(student.displayGrades()); // Output: "Math: 90, Science: 85"
+      
+
+      // Returns an array of the object’s property names.
+      console.log(Object.keys(person));
+
+      // Returns an array of the object’s property values.
+      console.log(Object.values(person));
+
+      // Returns an array of key-value pairs as arrays.
+      console.log(Object.entries(person));
+
+
+
+    </script>
+
+  </body>
+</html>

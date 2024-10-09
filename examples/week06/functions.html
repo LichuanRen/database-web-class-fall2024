@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    
+    <script>
+      function myFunction1() {
+        console.log('hello');
+        console.log(1 + 2);
+      }
+
+      myFunction1();
+
+      // myFunction1 refers to the function object
+      console.log(myFunction1);
+
+      // myFunction1() refers to the function result.
+      console.log(myFunction1());
+      
+      function myFunction2(a, b) {
+        return a * b;
+      }
+
+      console.log(myFunction2(2, 3));
+
+      function calculateSum(a, b) {
+        let sum = a + b;
+        console.log(sum);
+      }
+
+      sum = calculateSum(3, 5);
+      console.log(sum); 
+
+    </script>
+
+  </body>
+</html>
