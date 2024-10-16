@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Name</title>
+</head>
+<body>
+    <!-- Input for name -->
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <!-- Submit button -->
+    <button id="submitButton">Submit</button>
+    <!-- Paragraph to display the result -->
+    <p id="output"></p>
+
+    <script>
+        // Select elements
+        const nameInput = document.getElementById('nameInput');
+        const submitButton = document.getElementById('submitButton');
+        const outputParagraph = document.getElementById('output');
+
+        // Add event listener to the submit button
+        submitButton.addEventListener('click', function() {
+            // Get the value from the input field
+            const name = nameInput.value;
+
+            // Update the output paragraph with the name
+            outputParagraph.textContent = `Your name is: ${name}`;
+        });
+    </script>
+</body>
+</html>

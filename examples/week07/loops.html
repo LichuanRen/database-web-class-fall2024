@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <script>
+      const num = [10, 20, 30];
+      for (let i = 0; i < num.length; i++) {
+        console.log(num[i]);
+      }
+      // Output: 10 20 30
+
+      const person = {fname:"John", lname:"Doe", age:25};
+
+      let text = "";
+      for (let x in person) {
+        text += person[x];
+        console.log(text);
+      }
+
+      const names = ["Alice", "Bob", "Charlie"];
+      for (let name of names) {
+        console.log(name);
+      }
+
+
+      let count = 0;
+      while (count < 3) {
+        console.log(count);
+        count++;
+      }
+
+      let i = 10;
+      do {
+        console.log('hello');
+        i++;
+      }
+      while (i < 5);
+
+    </script>
+  </body>
+</html>

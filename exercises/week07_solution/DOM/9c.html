@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <button id="headsButton">heads</button>
+    <button id="tailsButton">tails</button>
+    <p id="result"></p>
+
+    <script>
+      // Select buttons and paragraph element
+      const headsButton = document.getElementById('headsButton');
+      const tailsButton = document.getElementById('tailsButton');
+      const resultParagraph = document.getElementById('result');
+
+      // Add event listeners to the buttons
+      headsButton.addEventListener('click', function() {
+          resultParagraph.textContent = 'You chose: heads';
+      });
+
+      tailsButton.addEventListener('click', function() {
+          resultParagraph.textContent = 'You chose: tails';
+      });
+    </script>
+  </body>
+</html>
